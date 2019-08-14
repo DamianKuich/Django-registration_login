@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+{% block title %}Register{% endblock %}
+{% block content %}
+   {% if form.errors %}Your username and password didn't match. Please try again.{% endif %}
+   <form action="." method="post" novalidate>{% csrf_token %}
+    <p class="hint-text">Create your account. It's free and only takes a minute.</p>
+    {{ form|crispy }} 
+        <button type="submit" class="btn btn-block" >Register Now</button>
+</form>
+
+
+{% endblock %}
+
+
+

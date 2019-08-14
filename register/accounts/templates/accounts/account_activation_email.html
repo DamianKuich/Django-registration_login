@@ -1,0 +1,8 @@
+{% autoescape off %}
+{% load crispy_forms_tags %}
+Hi {{ user.username }},
+
+Your account has successfully created. Please click below link to activate your account
+
+http://{{ domain }}{% url 'activate' uidb64=uid token=token %}
+{% endautoescape %}

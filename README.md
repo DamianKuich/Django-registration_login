@@ -1,0 +1,1 @@
+Django-registration_loginRegistration/login form in django<br/>You need django-crispy-forms for bootstrap:<br/>pip install --upgrade django-crispy-forms<br/>and Python v3.x and Django framework<br/>To launch just go to directory of the project and in console write: python manage.py runserver
